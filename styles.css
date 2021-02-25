@@ -1,6 +1,7 @@
 :root {
     --primary: #577ae4;
     --secondary: #ffffff;
+    --tertiary: #000000;
 }
 
 .primary-clr {
@@ -17,6 +18,10 @@
 
 .secondary-bg-clr {
     background-color: var(--secondary);
+}
+.conatiner-whole {
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 .header {
     width: 100%;
@@ -36,7 +41,8 @@
 }
 
 .media .media-body {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    text-align: start;
 }
 
 .media .media-body .header-section {
@@ -67,8 +73,6 @@
     background-color: lightgray;
 }
 
-
-
 .embed-responsive {
     width: 30rem;
 }
@@ -78,7 +82,109 @@
 }*/
 
 
+/* fourth section */
+.fourth-section .footer .icons .company-logo {
+    width: 6rem;
+    height: 3rem;
+}
 
+.fourth-section .media-section .media {
+    width: 35rem;
+    margin: 1rem;
+}
+
+.fourth-section .media-section .media .image {
+    width: 5rem;
+}
+
+/* fifth-section */
+.fifth-section {
+    background-color: #fff1e9;
+}
+
+.fifth-section .count-cards {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.fifth-section .media .carousel {
+    width: 50%;
+}
+.fifth-section .first-part .media {
+    width: 35rem;
+}
+.fifth-section .first-part .carousel {
+    width: 35rem;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.fifth-section .count-cards {
+    /* margin-left: 12rem;
+    margin-right: 12rem; */
+    background: var(--secondary);
+}
+.fifth-section .count-cards .count-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fifth-section .carousel-indicators li {
+    border-radius: 50% !important;
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+/* sixth section */
+.sixth-section .cards .card {
+    width: 35rem;
+}
+
+
+/* seventh section */
+
+
+/* eighth section */
+.eighth-section {
+    margin-left: -12rem;
+    margin-right: -12rem;
+}
+
+.eighth-section .mask {
+    padding: 10rem;
+    height: 30rem;
+    display: flex;
+}
+
+
+/* footer section */
+.footer-section {
+    margin-left: -12rem;
+    margin-right: -12rem;
+    background-color: currentColor;
+}
+.footer-section .footer .title {
+    width: 30rem;
+}
+.footer-section .nav-links {
+    width: 70rem;
+}
+
+/* margin */
+.margin-10 {
+    margin-top: 10rem;
+}
+
+
+h2 {
+    color: var(--primary);
+}
 
 
 
