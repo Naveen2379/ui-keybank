@@ -19,14 +19,15 @@
 .secondary-bg-clr {
     background-color: var(--secondary);
 }
-.conatiner-whole {
+/* .conatiner-whole {
     margin-left: 12rem;
     margin-right: 12rem;
-}
+} */
 
 .odd-section {
-    margin: 0rem 12rem;
+    padding: 0rem 12rem;
 }
+
 .odd-section:nth-child(odd) {
     background-color: #fff1e9;
 }
@@ -53,9 +54,9 @@
     text-align: start;
 }
 
-.media .media-body .header-section {
+/* .media .media-body .header-section {
     background-color: lightgray;
-}
+} */
 
 .media .media-body .header-section .span-text {
     color: var(--primary);
@@ -107,19 +108,19 @@
 
 /* fifth-section */
 
-.fifth-section .count-cards {
+.odd-section .count-cards {
     margin-left: 7rem;
     margin-right: 7rem;
 }
 
-.fifth-section .media .carousel {
+.odd-section .media .carousel {
     width: 50%;
 }
-.fifth-section .first-part .media {
-    width: 35rem;
+.odd-section .first-part .media {
+    width: 50%;
 }
-.fifth-section .first-part .carousel {
-    width: 35rem;
+.odd-section .first-part .carousel {
+    width: 50%;
 }
 
 
@@ -152,61 +153,64 @@
 
 
 /* seventh section */
-
-
-/* eighth section */
-.eighth-section {
-    margin-left: -12rem;
-    margin-right: -12rem;
+.seventh-section .comment-box-section .media:last-child {
+    opacity: 0.8;
 }
 
+/* eighth section */
+
+
 .eighth-section .mask {
-    padding: 10rem;
     height: 30rem;
     display: flex;
 }
 
 
-/* footer section */
-.footer-section {
-    margin-left: -12rem;
-    margin-right: -12rem;
-    background-color: currentColor;
-}
-.footer-section .footer .title {
-    width: 30rem;
-}
-.footer-section .nav-links {
-    width: 70rem;
+
+.developers {
+    color: var(--secondary);
 }
 
-/* margin */
-.margin-10 {
-    margin-top: 10rem;
+.list-group-item-custom {
+    position: relative;
+    display: block;
+    padding: .75rem 0rem;
+    border: none;
+}
+
+.list-group-item-custom a{
+    color: var(--secondary);
+}
+
+.list-group-item-custom a:active {
+    color: red;
 }
 
 
-/* h2 {
-    color: var(--primary);
-} */
-
-
-
-
-/*@media screen and (max-width: 299px) {
-    .fa .fa-twitter {
-        font-size: 1.2em;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .odd-section {
+        font-size: 6px;
     }
-}
+ }
 
-@media screen and (min-width: 300px) and (max-width: 799px) {
-    .fa .fa-twitter {
-        font-size: 2em;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .odd-section {
+        font-size: 8px;
     }
-}
+ }
 
-@media screen and (min-width: 800px) {
-    .fa .fa-twitter {
-        font-size: 6em;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .odd-section {
+        font-size: 10px;
     }
-}*/
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .odd-section {
+        font-size: 14px;
+    }
+ }
