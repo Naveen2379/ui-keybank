@@ -8,7 +8,7 @@ html, body {
     --primary: #577ae4;
     --secondary: #ffffff;
     --tertiary: #000000;
-    --odd-section:  #f1e9ff;
+    --odd-section:  #efe9ff;
 }
 
 .primary-clr {
@@ -41,7 +41,7 @@ html, body {
 } */
 
 .odd-section {
-    background-color: #f1e9ff;
+    background-color: #efe9ff;
 }
 
 /* default */
@@ -60,21 +60,26 @@ nav ul li.active a {
 
 
 
-/* first section */
-.header {
-    width: 100%;
-    height: 2rem;
-    border-bottom: 1px solid black;
-    margin-bottom: 50px;
-}
-.header .content {
-    border-right: 1px solid black;
+/* refactoring */
+.cards-header {
+    padding-right: 19%;
+    padding-left: 19%;
 }
 
+.content .cards {
+    width: 30%;
+}
+
+.crafting-ux ul li :hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
 
 .media-img {
     width: 35rem; height: 30rem;
 }
+
+
 
 .media .media-body {
     /* background-color: aliceblue; */
@@ -105,13 +110,12 @@ nav ul li.active a {
     color: black;
 }
 
-.card-content .card .card-image {
-    background-color: lightgray;
-}
 
-.embed-responsive {
-    width: 30rem;
-}
+
+/* .card-content .card .card-image {
+    background-color: lightgray;
+} */
+
 
 /*.media-body {
     line-height: 2rem;
@@ -125,8 +129,7 @@ nav ul li.active a {
 }
 
 .fourth-section .media-section .media {
-    width: 30rem;
-    margin: 1rem;
+    width: 45%;
 }
 
 .fourth-section .media-section .media .image {
@@ -175,7 +178,7 @@ nav ul li.active a {
 
 /* sixth section */
 .sixth-section .cards .card {
-    width: 35rem;
+    width: 45%;
 }
 
 
@@ -214,16 +217,33 @@ nav ul li.active a {
 }
 
 @media screen and (max-width: 566.98px) { 
+    html {
+        font-size: 10px;
+    }
     h1 {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
     p.h6 {
         font-size: .15rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    .media-body-heading {
+        display: flex;
     }
     .media-links {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+    }
+    
+    .crafting-ux ul {
+        display: flex;
+        flex-direction: row;
     }
     /* .odd-section {
         font-size: 6px;
@@ -232,11 +252,14 @@ nav ul li.active a {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 567px) and (max-width: 767.98px) { 
+    html {
+        font-size: 10px;
+    }
     h1 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     p.h6 {
-        font-size: .25rem !important;
+        font-size: .5rem !important;
     }
     .media-links {
         display: flex;
@@ -246,6 +269,11 @@ nav ul li.active a {
     .media-links button {
         margin-bottom: 1rem;
     }
+
+    .crafting-ux ul {
+        display: flex;
+        flex-direction: row;
+    }
     /* .odd-section {
         font-size: 6px;
     } */
@@ -253,11 +281,19 @@ nav ul li.active a {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+    html {
+        font-size: 12px;
+    }
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     p.h6 {
-        font-size: 0.5rem !important;
+        font-size: 0.7rem !important;
+    }
+
+    .crafting-ux ul {
+        display: flex;
+        flex-direction: row;
     }
     /* .odd-section {
         font-size: 8px;
@@ -266,11 +302,14 @@ nav ul li.active a {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    html {
+        font-size: 14px;
+    }
     h1 {
         font-size: 1.9rem;
     }
     p.h6 {
-        font-size: 0.75rem !important;
+        font-size: 0.8rem !important;
     }
     /* .odd-section {
         font-size: 10px;
@@ -279,6 +318,9 @@ nav ul li.active a {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    html {
+        font-size: 1rem;
+    }
     h1 {
         font-size: 2.2rem;
     }
