@@ -1,7 +1,14 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 :root {
     --primary: #577ae4;
     --secondary: #ffffff;
     --tertiary: #000000;
+    --odd-section:  #f1e9ff;
 }
 
 .primary-clr {
@@ -24,13 +31,33 @@
     margin-right: 12rem;
 } */
 
-.odd-section {
-    padding: 0rem 12rem;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.odd-section:nth-child(odd) {
-    background-color: #fff1e9;
+/* .odd-section {
+    padding: 0rem 12rem;
+} */
+
+.odd-section {
+    background-color: #f1e9ff;
 }
+
+/* default */
+nav ul li a, nav ul li a:visited {
+    color: var(--tertiary) !important;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color: var(--primary) !important;
+}
+
+nav ul li.active a {
+    color: var(--primary) !important;
+}
+
+
 
 
 /* first section */
@@ -108,7 +135,7 @@
 
 /* fifth-section */
 
-.odd-section .count-cards {
+/* .odd-section .count-cards {
     margin-left: 7rem;
     margin-right: 7rem;
 }
@@ -121,7 +148,7 @@
 }
 .odd-section .first-part .carousel {
     width: 50%;
-}
+} */
 
 
 .fa-check-circle {
@@ -186,31 +213,79 @@
     color: red;
 }
 
+@media screen and (max-width: 566.98px) { 
+    h1 {
+        font-size: 1.3rem;
+    }
+    p.h6 {
+        font-size: .15rem !important;
+    }
+    .media-links {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    /* .odd-section {
+        font-size: 6px;
+    } */
+ }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    .odd-section {
-        font-size: 6px;
+@media (min-width: 567px) and (max-width: 767.98px) { 
+    h1 {
+        font-size: 1.3rem;
     }
+    p.h6 {
+        font-size: .25rem !important;
+    }
+    .media-links {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .media-links button {
+        margin-bottom: 1rem;
+    }
+    /* .odd-section {
+        font-size: 6px;
+    } */
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    .odd-section {
-        font-size: 8px;
+    h1 {
+        font-size: 1.6rem;
     }
+    p.h6 {
+        font-size: 0.5rem !important;
+    }
+    /* .odd-section {
+        font-size: 8px;
+    } */
  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    .odd-section {
-        font-size: 10px;
+    h1 {
+        font-size: 1.9rem;
     }
+    p.h6 {
+        font-size: 0.75rem !important;
+    }
+    /* .odd-section {
+        font-size: 10px;
+    } */
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    .odd-section {
-        font-size: 14px;
+    h1 {
+        font-size: 2.2rem;
     }
+    p.h6 {
+        font-size: 1rem !important;
+    }
+    /* .odd-section {
+        font-size: 14px;
+    } */
  }
