@@ -221,10 +221,10 @@ nav ul li.active a {
         font-size: 10px;
     }
     h1 {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
-    p.h6 {
-        font-size: .15rem !important;
+    h6 {
+        font-size: .75rem !important;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -232,13 +232,38 @@ nav ul li.active a {
         padding-right: 0rem;
         padding-left: 0rem;
     }
+    p.h6 {
+        font-size: 0.3rem !important;
+    }
+
+    .count-card {
+        text-align: center;
+    
+    }
+
+    .icons a {
+        margin-right: -2rem;
+    }
     .media-body-heading {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
+
     .media-links {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .fourth-section .media-section .media {
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-box-section .media {
+        display: flex;
+        flex-direction: column;
+        width: 23% !important;
     }
     
     .crafting-ux ul {
@@ -256,18 +281,26 @@ nav ul li.active a {
         font-size: 10px;
     }
     h1 {
-        font-size: 1rem;
+        font-size: 1.6rem;
+    }
+    h6 {
+        font-size: .75rem !important;
     }
     p.h6 {
-        font-size: .5rem !important;
+        font-size: 0.5rem !important;
     }
     .media-links {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
     }
     .media-links button {
         margin-bottom: 1rem;
+    }
+    .comment-box-section .media {
+        display: flex;
+        flex-direction: column;
+        width: 23% !important;
     }
 
     .crafting-ux ul {
@@ -285,10 +318,23 @@ nav ul li.active a {
         font-size: 12px;
     }
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+    }
+    h6 {
+        font-size: 0.75rem !important;
     }
     p.h6 {
         font-size: 0.7rem !important;
+    }
+    .comment-box-section .media {
+        display: flex;
+        flex-direction: column;
+        width: 23% !important;
+    }
+    .comment-box-section .media {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
     }
 
     .crafting-ux ul {
@@ -306,10 +352,18 @@ nav ul li.active a {
         font-size: 14px;
     }
     h1 {
-        font-size: 1.9rem;
+        font-size: 2.0rem;
+    }
+    h6 {
+        font-size: 0.8rem !important;
     }
     p.h6 {
         font-size: 0.8rem !important;
+    }
+    .comment-box-section .media {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
     }
     /* .odd-section {
         font-size: 10px;
@@ -324,8 +378,16 @@ nav ul li.active a {
     h1 {
         font-size: 2.2rem;
     }
+    h6 {
+        font-size: 1rem !important;
+    }
     p.h6 {
         font-size: 1rem !important;
+    }
+    .comment-box-section .media {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
     }
     /* .odd-section {
         font-size: 14px;
