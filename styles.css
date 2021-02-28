@@ -44,19 +44,6 @@ html, body {
     background-color: #efe9ff;
 }
 
-/* default */
-nav ul li a, nav ul li a:visited {
-    color: var(--tertiary) !important;
-}
-
-nav ul li a:hover, nav ul li a:active {
-    color: var(--primary) !important;
-}
-
-nav ul li.active a {
-    color: var(--primary) !important;
-}
-
 
 
 
@@ -78,6 +65,78 @@ nav ul li.active a {
 .media-img {
     width: 35rem; height: 30rem;
 }
+
+.list-group-item-custom1 {
+    width: 30% !important;
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    border: none;
+    margin: 0rem 1rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item-custom {
+    position: relative;
+    display: block;
+    padding: .75rem 0rem;
+}
+
+.list-group-item-custom2 {
+    position: relative;
+    display: block;
+}
+
+
+
+
+/*  sixth section */
+.sixth-section .cards nav ul li :active a  {
+    text-decoration-color: #EA215A !important;
+    text-decoration-thickness: .125em !important;
+    text-underline-offset: 1.5px !important;
+}
+
+.sixth-section .cards nav ul li a{
+    text-decoration-color: #EA215A !important;
+    text-decoration-thickness: .125em !important;
+    text-underline-offset: 1.5px !important;
+}
+
+.sixth-section .cards nav ul li :visited a {
+    text-decoration-color: #EA215A !important;
+    text-decoration-thickness: .125em !important;
+    text-underline-offset: 1.5px !important;
+}
+
+
+
+
+
+/* default */
+nav ul li a, nav ul li a:visited {
+    color: var(--tertiary) !important;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -176,16 +235,9 @@ nav ul li.active a {
 }
 
 
-/* sixth section */
-.sixth-section .cards .card {
-    width: 45%;
-}
 
 
-/* seventh section */
-.seventh-section .comment-box-section .media:last-child {
-    opacity: 0.8;
-}
+
 
 /* eighth section */
 
@@ -201,12 +253,7 @@ nav ul li.active a {
     color: var(--secondary);
 }
 
-.list-group-item-custom {
-    position: relative;
-    display: block;
-    padding: .75rem 0rem;
-    border: none;
-}
+
 
 .list-group-item-custom a{
     color: var(--secondary);
@@ -260,11 +307,11 @@ nav ul li.active a {
         display: flex;
         flex-direction: column;
     }
-    .comment-box-section .media {
+    /* .comment-box-section .media {
         display: flex;
         flex-direction: column;
         width: 23% !important;
-    }
+    } */
     
     .crafting-ux ul {
         display: flex;
@@ -297,11 +344,11 @@ nav ul li.active a {
     .media-links button {
         margin-bottom: 1rem;
     }
-    .comment-box-section .media {
+    /* .comment-box-section .media {
         display: flex;
         flex-direction: column;
         width: 23% !important;
-    }
+    } */
 
     .crafting-ux ul {
         display: flex;
@@ -326,7 +373,11 @@ nav ul li.active a {
     p.h6 {
         font-size: 0.7rem !important;
     }
-    .comment-box-section .media {
+
+    ul .list-group-item-custom2 {
+        
+    }
+    /* .comment-box-section .media {
         display: flex;
         flex-direction: column;
         width: 23% !important;
@@ -335,7 +386,7 @@ nav ul li.active a {
         display: flex;
         flex-direction: row;
         width: 20%;
-    }
+    } */
 
     .crafting-ux ul {
         display: flex;
@@ -360,11 +411,15 @@ nav ul li.active a {
     p.h6 {
         font-size: 0.8rem !important;
     }
-    .comment-box-section .media {
+
+    ul .list-group-item-custom2 {
+        width: 40%;
+    }
+    /* .comment-box-section .media {
         display: flex;
         flex-direction: row;
         width: 20%;
-    }
+    } */
     /* .odd-section {
         font-size: 10px;
     } */
@@ -384,11 +439,16 @@ nav ul li.active a {
     p.h6 {
         font-size: 1rem !important;
     }
-    .comment-box-section .media {
+
+    ul .list-group-item-custom2 {
+        /* width: 45%; */
+    }
+
+    /* .comment-box-section .media {
         display: flex;
         flex-direction: row;
         width: 20%;
-    }
+    } */
     /* .odd-section {
         font-size: 14px;
     } */
